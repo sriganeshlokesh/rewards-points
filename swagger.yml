@@ -1,0 +1,53 @@
+openapi: 3.0.0
+info:
+  title: FETCH REWARDS
+  version: 1.0.0
+servers:
+  - url: 'http://localhost:5000'
+paths:
+  /points/transaction:
+    post:
+      tags:
+        - General
+      summary: ADD POINTS
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                payer: UNILEVER
+                points: 300
+                timestamp: '2020-10-31T11:00:00Z'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /points/spend:
+    post:
+      tags:
+        - General
+      summary: SPEND POINTS
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                points: 5000
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /points/balance:
+    get:
+      tags:
+        - General
+      summary: GET BALANCE
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
