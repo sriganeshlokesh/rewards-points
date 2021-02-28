@@ -4,7 +4,7 @@ Rewards Points API
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package, npm, installed in your environment.
 
 ### Node
 - #### Node installation on Windows
@@ -44,4 +44,8 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 
     $ npm run start
     
-    Your app should now be running on [localhost:5000](http://localhost:5000).
+   Your app should now be running on [localhost:5000](http://localhost:5000).
+    
+## API Document Endpoints
+
+   Swagger Spec Endpoint: [localhost:5000/api-docs](http://localhost:5000/api-docs)
