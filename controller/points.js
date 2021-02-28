@@ -4,6 +4,7 @@ const transactions = []
 let spending = {}
 let payers = {}
 
+// Add Points
 exports.addPoints = (req, res) => {
     const {payer, points, timestamp} = req.body
     const transaction = new Transaction(payer, points, timestamp)
@@ -19,6 +20,7 @@ exports.addPoints = (req, res) => {
     })
 }
 
+// Spend Points
 exports.spendPoints = (req, res) => {
     let total = 0
     
@@ -63,21 +65,10 @@ exports.spendPoints = (req, res) => {
 
 }
 
+// Get Payer balance
 exports.getPayers = (req, res) => {
-    // const payers = {}
-    // transactions.map((transaction)=>{
-    //     const {payer, points} = transaction
-    //     if (payer in payers){
-    //         payers[payer] += points
-    //     }
-    //     else{
-    //         payers[payer] = points
-    //     }
-    // })
-
     return res.status(200).json(
         payers
     )
-
 }
 
