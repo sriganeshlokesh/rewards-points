@@ -1,5 +1,13 @@
 # Rewards Points
-Rewards Points API 
+### Rewards Points API 
+
+Rewards Points API is used to keep track of the points available in a user's account while performing certain transactions. 
+
+* Users have points in their accounts.
+* Users can only see a single balance in their accounts based on the payer.
+* We can add transactions for a specific payer and date
+* We can spend points.
+* We can return all the balances based on the payer.
 
 ---
 ## Requirements
